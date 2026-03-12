@@ -268,7 +268,7 @@ class _VoiceMessageState extends State<VoiceMessage>
                   min: 0.0,
                   max: maxDurationForSlider,
                   onChangeStart: (__) => _stopPlaying(),
-                  onChanged: (_) => _onChangeSlider(_),
+                  onChanged: (d) => _onChangeSlider(d),
                   value: duration + .0,
                 ),
               ),
